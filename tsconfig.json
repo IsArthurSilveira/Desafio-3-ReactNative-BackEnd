@@ -1,0 +1,28 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    /* Módulos e Resolução */
+    "module": "NodeNext",               // Use a sintaxe de módulo moderna do Node
+    "moduleResolution": "NodeNext",     // Use o algoritmo de resolução moderna
+    "esModuleInterop": true,
+
+    /* Decoração e TypeORM */
+    "emitDecoratorMetadata": true,      // ESSENCIAL para TypeORM
+    "experimentalDecorators": true,     // ESSENCIAL para TypeORM
+    "target": "ES2020",
+    "lib": ["ES2020"],
+
+    /* Configuração de Projeto */
+    "rootDir": "src",
+    "outDir": "dist",
+    "strict": true,                     // Mantenha strict: true, mas...
+    "skipLibCheck": true,
+    
+    /* CORRIGE O ERRO DE TYPEORM/AURORA E VERBATIM */
+    // Remove o erro de 'verbatimModuleSyntax'
+    "verbatimModuleSyntax": false,
+    // A propriedade 'exactOptionalPropertyTypes' pode causar o erro do Aurora
+    // Se o erro persistir, você pode comentá-la ou ajustá-la.
+    "exactOptionalPropertyTypes": false 
+  }
+}
