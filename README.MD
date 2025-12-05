@@ -37,13 +37,19 @@ Crie o arquivo .env na raiz do projeto e insira as credenciais do seu banco de d
 
 ATENÇÃO: Nunca publique este arquivo em seu repositório!
 
-# .env (Exemplo com credenciais do Neon)
+## .env (Exemplo com credenciais do Neon)
 PORT=3000
+
 DB_TYPE=postgres
+
 DB_HOST=SEU_HOST_DO_NEON
+
 DB_PORT=5432
+
 DB_USERNAME=SEU_USUARIO
+
 DB_PASSWORD=SUA_SENHA_AQUI
+
 DB_DATABASE=SEU_NOME_DO_BANCO
 
 
